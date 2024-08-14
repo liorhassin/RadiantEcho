@@ -11,8 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\RadiantEcho\Log.h" />
     <ClInclude Include="src\RadiantEcho.h" />
-    <ClInclude Include="src\RadiantEcho\Application.h" />
     <ClInclude Include="src\RadiantEcho\Application.h">
       <SubType>
       </SubType>
@@ -21,6 +21,7 @@
     <ClInclude Include="src\RadiantEcho\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\RadiantEcho\Log.cpp" />
     <ClCompile Include="src\RadiantEcho\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -70,6 +71,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>RE_PLATFORM_WINDOWS;RE_BUILD_DLL;_WINDLL%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)RadiantEcho\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -84,6 +86,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>RE_PLATFORM_WINDOWS;RE_BUILD_DLL;_WINDLL%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)RadiantEcho\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

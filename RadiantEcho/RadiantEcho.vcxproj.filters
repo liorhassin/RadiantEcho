@@ -30,9 +30,15 @@
     <ClInclude Include="src\RadiantEcho\EntryPoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\RadiantEcho\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\RadiantEcho\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RadiantEcho\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
